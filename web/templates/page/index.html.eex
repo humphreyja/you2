@@ -1,0 +1,4 @@
+<h1>Home</h1>
+<a href="<%= page_path(@conn, :update) %>">
+  Update Page
+</a>

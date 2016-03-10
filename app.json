@@ -1,0 +1,30 @@
+{
+  "addons": [
+    "heroku-postgresql:hobby-dev",
+    "heroku-redis:hobby-dev",
+    "memcachier:dev",
+    "papertrail:choklad",
+    "rollbar:free",
+    "sendgrid:starter"
+  ],
+  "buildpacks": [{
+    "url": "https://github.com/HashNuke/heroku-buildpack-elixir"
+  }, {
+    "url": "https://github.com/gjaldon/phoenix-static-buildpack"
+  }],
+  "env": {
+    "HOST": {
+      "description": "The host used as the canonical host and to generate URLs in mailers. This should be a custom domain tied to the app or [App Name].herokuapp.com",
+      "required": true,
+      "value": "???.herokuapp.com"
+    },
+    "SECRET_KEY_BASE": {
+      "description": "The base token to use for verifying the integrity of your app's session cookies.",
+      "generator": "secret",
+      "required": true
+    }
+  },
+  "scripts": {
+    "postdeploy": "mix ecto.migrate"
+  }
+}

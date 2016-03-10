@@ -1,0 +1,10 @@
+$logo-height: 99px / 2;
+$logo-width: 728px / 2;
+
+.logo {
+  background-image: url("/images/phoenix.png");
+  background-size: 100%;
+  display: block;
+  height: $logo-height;
+  width: $logo-width;
+}

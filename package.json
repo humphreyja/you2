@@ -1,0 +1,20 @@
+{
+  "name": "you2",
+  "version": "1.0.0",
+  "description": "",
+  "author": "",
+  "devDependencies": {
+    "blumenkohl.js": "0.0.1",
+    "bourbon": "^4.2.6",
+    "broccoli": "^0.16.9",
+    "broccoli-cli": "^1.0.0",
+    "broccoli-es6modules": "^1.2.2",
+    "broccoli-funnel": "^1.0.1",
+    "broccoli-merge-trees": "^1.1.1",
+    "broccoli-replace": "^0.11.0",
+    "broccoli-sass": "^0.7.0",
+    "glob-fs": "^0.1.6",
+    "normalize-css": "^2.3.1",
+    "normalize.css": "^3.0.3"
+  }
+}
